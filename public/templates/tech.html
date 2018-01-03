@@ -1,0 +1,35 @@
+<!DOCTYPE>
+<head>
+    <title>Technologies</title>
+</head>
+<body>
+<div class="container">
+    <h1>Insert Technology</h1>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Technology</th>
+            <th>&nbsp;</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><input class="form-control" ng-model="tech.name">
+            </input></td>
+            <td><button class="btn btn-primary" ng-click="addTech()">Add Tech</button></td>
+            <td><button class="btn btn-info" ng-click="update()">Update</button>&nbsp;&nbsp;<button class="btn btn-info" ng-click="deselect()">Clear</button></td>
+
+        </tr>
+        <tr ng-repeat="tech in techlist">
+            <td>{{tech.name}}</td>
+            <td><button class="btn btn-danger" ng-click="remove(tech.id)">Remove</button></td>
+            <td><button class="btn btn-success" ng-click="edit(tech.id)">Edit</button></td>
+        </tr>
+        </tbody>
+    </table>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "SogetiDevs",
+  "description": "DEVS",
+  "main": "app.js",
+  "authors": [
+    "Juan Alvarez",
+    "Toni Llull"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "*",
+    "angular": "*",
+    "angular-route": "*",
+    "angular-datatables": "^5.0.0"
+  }
+}

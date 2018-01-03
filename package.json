@@ -1,0 +1,16 @@
+{
+  "name": "minimos",
+  "version": "1.0.0",
+  "description": "plantilla de prueba para los minimos",
+  "author": "juan",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "*",
+    "express": "*",
+    "grunt": "^1.0.1",
+    "method-override": "*",
+    "mysql": "^2.15.0",
+    "nodemon": "^1.14.1",
+    "grunt-ng-constant": "^2.0.1"
+  }
+}

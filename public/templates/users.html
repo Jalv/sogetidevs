@@ -1,0 +1,47 @@
+
+<!DOCTYPE>
+<head>
+    <title>SogetiDevs</title>
+</head>
+<body>
+<div class="container">
+    <h1>Insert Dev User</h1>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Username</th>
+            <th>Name</th>
+            <th>Password</th>
+            <th>&nbsp;</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><input class="form-control" ng-model="user.username">
+
+                </input></td>
+            <td><input class="form-control" ng-model="user.name">
+
+                </input></td>
+                <td><input class="form-control" type="password" ng-model="user.password">
+
+                    </input></td>
+            <td><button class="btn btn-primary" ng-click="addUser()">ADD User</button></td>
+            <td><button class="btn btn-info" ng-click="update()">Update</button>&nbsp;&nbsp;<button class="btn btn-info" ng-click="deselect()">Clear</button></td>
+
+        </tr>
+        <tr ng-repeat="user in userlist">
+            <td>{{user.username}}</td>
+            <td>{{user.name}}</td>
+            <td></td>
+            <td><button class="btn btn-danger" ng-click="remove(user.id)">Remove</button></td>
+            <td><button class="btn btn-success" ng-click="edit(user.id)">Edit</button></td>
+        </tr>
+        </tbody>
+    </table>
+
+
+</div>
+</body>
+</html>
